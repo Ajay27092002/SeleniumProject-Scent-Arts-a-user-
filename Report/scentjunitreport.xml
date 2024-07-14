@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="194.141">
+    <testcase classname="To test Scent-Arts website functionality" name="To verify the descriptions of AREAS OF SCENTING secion" time="42.181">
+        <failure message="Browsing context has been discarded&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AJAY', ip: '192.168.247.76', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 128.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240704121409, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12408, moz:profile: C:\Users\ajay4\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}&#10;Session ID: 617096be-420f-4d66-a2fb-c002ae449e90&#10;*** Element info: {Using=xpath, value=(//a[contains(text(),'About Us')][1])}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given To launch the browser.................................................passed
+When To launch URL of Scent-Arts............................................passed
+And To click About Us button................................................failed
+And To Scroll down to the AREAS OF SCENTING section.........................skipped
+And Click on hotels, offices and airports areas.............................skipped
+And To check hotels, offices and airports areas description is present......skipped
+Then To close the browser...................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AJAY', ip: '192.168.247.76', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 128.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240704121409, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12408, moz:profile: C:\Users\ajay4\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 617096be-420f-4d66-a2fb-c002ae449e90
+*** Element info: {Using=xpath, value=(//a[contains(text(),'About Us')][1])}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.StepDefnition.ScentDescription.to_click_about_us_button(ScentDescription.java:47)
+	at ✽.To click About Us button(file:///C:/Users/ajay4/eclipse-workspace/ScentWebSiteTest/src/test/resources/Scent.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="To test Scent-Arts website functionality" name="To verify that clicking the Contact Us button automatically navigates to the Contact Us page" time="83.436">
+        <system-out><![CDATA[Given To launch the browser.................................................passed
+When To launch URL of Scent-Arts............................................passed
+And To click the OUR SERVICES button........................................passed
+And To scroll down to Contact Us button.....................................passed
+And To click the Contact Us button..........................................passed
+And Scroll down to the form and take screenshot.............................passed
+Then To close the browser...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To test Scent-Arts website functionality" name="To verify Contact Us page functionality" time="67.501">
+        <system-out><![CDATA[Given To launch the browser.................................................passed
+When To launch URL of Scent-Arts............................................passed
+And click the contact us button.............................................passed
+And To enter the name in name field.........................................passed
+And To enter the company name in company name field.........................passed
+And To enter phone number in phone number field.............................passed
+And To enter email in mail address field....................................passed
+And To select type of services..............................................passed
+And To enter the location in location field.................................passed
+And To enter the message in message field...................................passed
+And To click send button....................................................passed
+Then To close the browser...................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
